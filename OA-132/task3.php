@@ -27,6 +27,38 @@
     }
 
     displayStudentsInfo($students);
+
+    // OOP Implementation
+    class studentInfo {
+      private $students;
+
+      public function __construct($students) {
+        $this->students = $students;
+      }
+
+      public function displayStudentsInfo() {
+        if (empty($this->students)) {
+          echo "Please enter all details.";
+          return;
+        }
+
+        foreach ($this->students as $name => $grade) {
+          echo "Student: $name; Grade: $grade <br>";
+        }
+      }
+    }
+
+    $students = array(
+      "Anwesha" => 90,
+      "Ishita" => 80,
+      "Kiko" => 100,
+      "Simba" => 100,
+      "Nimo" => 80,
+      "Poco" => 80,
+    );
+
+    $studentInfo = new studentInfo($students);
+    $studentInfo->displayStudentsInfo();
   ?>
 </body>
 </html>
