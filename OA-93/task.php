@@ -48,6 +48,11 @@
     $numbers = array(5, 3, 8, 1, 2);
     sort($numbers);
     echo implode(" ", $numbers);
+
+    // using push() and pop()
+    array_push($numbers, 7);
+    array_pop($numbers);
+    echo implode(" ", $numbers);
   ?>
 </body>
 </html>
