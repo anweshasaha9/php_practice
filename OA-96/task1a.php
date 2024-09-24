@@ -13,12 +13,6 @@
     } else {
       die("Error: The file does not exist.");
     }
-
-
-
-
-
-  
   ?>
 </body>
 </html>

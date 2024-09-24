@@ -23,17 +23,6 @@
       return $dividend / $divisor;
     }
 
-    // try {
-    //   $result = divide(10, 5);
-    //   echo "The result is: $result";
-    // } catch(Exception $e) {
-    //   echo "Unable to divide. ";
-    // } finally {
-    //   echo "Process complete.";
-    // }
-
-    // restore_error_handler();
-
     // Trigerring an error
     try {
       include('non_existent_file.php');
